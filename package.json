@@ -1,0 +1,29 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Tournament Game",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didzis85/thegame.git"
+  },
+  "keywords": [
+    "thegame"
+  ],
+  "author": "Didzis Luka-Indans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didzis85/thegame/issues"
+  },
+  "homepage": "https://github.com/didzis85/thegame#readme"
+}
