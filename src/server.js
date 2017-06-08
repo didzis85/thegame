@@ -5,12 +5,12 @@ const mysql			= require('mysql');
 
 const bodyParser	= require('body-parser');
 
-const PORT			= 8081;
-
-const dbUser		= 'game';
-const dbPass		= 'nmnu2SLfQSsEcHs4';
+// SETUP!
+const dbUser		= 'root';
+const dbPass		= '';
 const dbDB			= 'game';
-const dbHost		= '10.10.10.20';
+const dbHost		= '127.0.0.1';
+const PORT			= 8081;
 
 const app			= express();
 
