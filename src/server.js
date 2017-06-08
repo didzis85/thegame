@@ -74,7 +74,9 @@ app.get('/', function (req, res) {
 		'	<input type="hidden" name="winners[0][playerID]" value="P1" />' +
 		'	<input type="hidden" name="winners[0][prize]" value="2000" />' +
 		'	<input type="submit" value="/resultTournament [post]" />'+
-		'</form><br />';
+		'</form><br /><br /><br />'+
+			
+		'<a href="/reset">/reset database</a><br />';
 
 
 
