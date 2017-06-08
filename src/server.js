@@ -12,9 +12,6 @@ const dbPass		= 'nmnu2SLfQSsEcHs4';
 const dbDB			= 'game';
 const dbHost		= '10.10.10.20';
 
-const fakePrize		= 2000;
-const fakeWinner	= 'P1';
-
 const app			= express();
 
 app.use( bodyParser.json() ); 
@@ -344,7 +341,7 @@ app.post('/resultTournament', function (req, res) {
 	var tournamentID		= req.body.tournamentId,
 		winners				= req.body.winners,
 		prizePretendents,
-		prizeAmountEach;		
+		prizeAmountEach;
 
 	if( tournamentID ) {
 
@@ -357,10 +354,10 @@ app.post('/resultTournament', function (req, res) {
 					prizePretendents	= 1;
 					prizeAmountEach		= winners[j].prize;
 
-					console.log("[*] Announce Results tournament ID: "+tournamentID+". WINNER ID: "+winners[j].playerId+" as Winner, +"+prizeAmountEach+" points.");
+					console.log("[*] Announce Results tournament ID: "+tournamentID+". WINNER ID: "+winners[j].playerID+" as Winner, +"+prizeAmountEach+" points.");
 					console.log("[+] Calculating results Tournament ID: "+tournamentID);
 
-					var query = "SELECT playerID FROM opt_player_to_tournament WHERE playerID='"+winners[j].playerId+"' AND tournamentID='"+tournamentID+"'";			
+					var query = "SELECT playerID FROM opt_player_to_tournament WHERE playerID='"+winners[j].playerID+"' AND tournamentID='"+tournamentID+"'";			
 					sql.query(query, function(err, participantData) { 
 
 
