@@ -105,8 +105,6 @@ app.get('/reset', function (req, res) {
 	query = "TRUNCATE opt_tournaments";
 	sql.query(query);
 
-
-	res.redirect(req.get('referer'));
 });
 
 app.get('/take', function (req, res) {
